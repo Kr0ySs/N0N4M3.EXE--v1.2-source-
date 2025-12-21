@@ -1,42 +1,44 @@
 import functions
 from functions import (
-                       # ESCRITA
-                       escrever, 
-                       escreverlento, 
-                       escreverrapido, 
-                       sleep, 
-                       # SISTEMAS
-                       os, 
-                       pygame,
-                       punicao,
-                       punicao_final, 
-                       # AUDIOS
-                       somescolha, 
-                       line, 
-                       playerescolha, 
-                       line, 
-                       menu,
-                       linhanova,
-                       gameover,
-                       gameover2,
-                       scream,
-                       glassbreak,
-                       wind,
-                       roar,
-                       pain,
-                       bone,
-                       stab,
-                       unlocking,
-                       fallingbush,
-                       fallingtree,
-                       chainsaw)
+    # ESCRITA
+    escrever,
+    escreverlento,
+    escreverrapido,
+    sleep,
+    # SISTEMAS
+    os,
+    pygame,
+    punicao,
+    punicao_final,
+    # AUDIOS
+    somescolha,
+    line,
+    playerescolha,
+    line,
+    menu,
+    linhanova,
+    gameover,
+    gameover2,
+    scream,
+    glassbreak,
+    wind,
+    roar,
+    pain,
+    bone,
+    stab,
+    unlocking,
+    fallingbush,
+    fallingtree,
+    chainsaw,
+)
 
 # JOGO
 
 os.system("cls")
 os.system("color 6")
 
-escreverrapido('''
+escreverrapido(
+    """
                         Olá, seja bem vindo ao N0N4M3.EXE, esse é um jogo Text-Based feito totalmente em Python!
                 Antes do jogo começar, vou dar algumas dicas para que a sua experiência em N0N4M3.EXE seja a melhor possível!
 
@@ -50,39 +52,52 @@ escreverrapido('''
             [4] O jogo não possui um sistema de proteção "anti-bug" ou seja, se você digitar algo que não está nas opções, o terminal irá fechar
             
             [5] Caso você esteja jogando enquanto grava ou em stream, não se esqueça de dar os créditos ao criador:
-            ''')
+            """
+)
 sleep(1)
-print('''
+print(
+    """
                                                                               Criador: Kr0ySs
-      ''')
+      """
+)
 somescolha.play()
 sleep(1)
-print('''
+print(
+    """
                                                                               Discord: kr0yss
-      ''')
+      """
+)
 somescolha.play()
 sleep(1)
-print('''
+print(
+    """
                                                                               Twitch : kr0yss
-      ''')
+      """
+)
 somescolha.play()
 sleep(1)
-print('''
+print(
+    """
                                                                               YouTube: Kr0ySs
-      ''')
+      """
+)
 somescolha.play()
 sleep(2)
-escrever('''
+escrever(
+    """
                                                       Boa sorte, você vai precisar!
-         ''')
+         """
+)
 sleep(1)
-print('''
+print(
+    """
                                                       *Pressione ENTER Para Iniciar*
-      ''')
+      """
+)
 sleep(2)
 
 line.play()
-input('=> ')
+input("=> ")
 
 os.system("color f0")
 line.play()
@@ -103,57 +118,73 @@ os.system("cls")
 
 sleep(0.5)
 
-functions.titulo_menu()  
+functions.titulo_menu()
 
 os.system("cls")
 sleep(2)
 
-print('''
+print(
+    """
                                                                                                            D I A  1
-         ''')
+         """
+)
 linhanova.play()
 sleep(1)
-print('''
+print(
+    """
                                                                                                    Q U I N T A - F E I R A
-      ''')
+      """
+)
 linhanova.play()
 sleep(1)
-print('''
+print(
+    """
                                                                                                          0 0  :  3 0 H 
-      ''')
+      """
+)
 linhanova.play()
 sleep(3)
 
 os.system("cls")
 os.system("color f")
 
-print('''
+print(
+    """
                                                                                                       Você acorda em uma cama
-      ''') 
+      """
+)
 line.play()
 sleep(2)
-print('''
+print(
+    """
                                                                                                      Ela é macia e confortável
-      ''')
+      """
+)
 line.play()
 sleep(2)
-print('''
+print(
+    """
                                                                                           Que sensação é essa? É como se a cama estivesse...
-      ''')
+      """
+)
 line.play()
 sleep(3)
-print('''
+print(
+    """
                                                                                                            ...molhada
-      ''')
+      """
+)
 line.play()
 sleep(3)
 os.system("cls")
 os.system("color f")
 sleep(0.5)
 
-print('''
+print(
+    """
                                                                             *Você se levanta e descobre o que estava fazendo a cama parecer molhada*
-      ''')
+      """
+)
 line.play()
 
 sleep(4)
@@ -161,14 +192,18 @@ os.system("cls")
 os.system("color 4")
 sleep(0.5)
 
-print('''
+print(
+    """
                                                                                                   Tinha sangue por todo o lugar
-         ''')
+         """
+)
 linhanova.play()
 sleep(2)
-print('''
+print(
+    """
                                                                                        Você só não gritou porque ouviu passos em sua direção
-      ''')
+      """
+)
 linhanova.play()
 sleep(3)
 os.system("cls")
@@ -178,116 +213,151 @@ os.system("color f")
 
 functions.cena_primeira_escolha()
 
-print('''
+print(
+    """
                                                                               [1] Fingir que está dormindo
-      ''')
+      """
+)
 somescolha.play()
 
 sleep(0.5)
-print('''
+print(
+    """
                                                                               [2] Se esconder embaixo da cama
-      ''')
+      """
+)
 somescolha.play()
 
 sleep(0.5)
-print('''
+print(
+    """
                                                                               [3] Gritar por socorro
-      ''')
+      """
+)
 somescolha.play()
 
 sleep(2)
 
 line.play()
-escolha = input('=> ')
+escolha = input("=> ")
 
-if escolha == '1':
+if escolha == "1":
     os.system("cls")
-    print('''
+    print(
+        """
                                                                                                         Escolha com cuidado:
       
 
           
                                                                               [1] Fingir que está dormindo
-      ''')
+      """
+    )
     playerescolha.play()
     sleep(2)
     os.system("cls")
     os.system("color f")
     sleep(1)
-    print('''
+    print(
+        """
                                                                     Enquanto fingia que estava dormindo, a figura entrou no quarto e ficou lá... te observando
-          ''')
+          """
+    )
     line.play()
     sleep(4)
-    print('''
+    print(
+        """
                                                                             Felizmente, apenas te observou por alguns minutos, ela foi embora após isso
-          ''')
+          """
+    )
     line.play()
     sleep(4)
-    print('''
+    print(
+        """
                                                                                                   Você não viu o rosto da figura
-          ''')
+          """
+    )
     line.play()
     sleep(2)
 
-
     os.system("cls")
     os.system("color f")
-    print('''
+    print(
+        """
                                                                                                       O que fazer agora?
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.5)
     print()
-    print('''
+    print(
+        """
                                                                                     [1] Explorar o quarto
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.5)
-    print('''
+    print(
+        """
                                                                                     [2] Tentar abrir a janela
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.5)
-    print('''
+    print(
+        """
                                                                                     [3] Sair do quarto
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.7)
     os.system("color f4")
-    print('''
+    print(
+        """
                                                                                     [?] #¨#$¨&@%$% v0c3 v4i M0Rr3r S3 N40 f3cH4R 0 J0G0! @#!#%¨#$
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.1)
-    print('''
+    print(
+        """
                                                                                     [?] #¨#$¨&@%$% v0c3 v4i M0Rr3r S3 N40 f3cH4R 0 J0G0! @#!#%¨#$
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.1)
-    print('''
+    print(
+        """
                                                                                     [?] #¨#$¨&@%$% v0c3 v4i M0Rr3r S3 N40 f3cH4R 0 J0G0! @#!#%¨#$
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.1)
-    print('''
+    print(
+        """
                                                                                     [?] #¨#$¨&@%$% v0c3 v4i M0Rr3r S3 N40 f3cH4R 0 J0G0! @#!#%¨#$
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.1)
-    print('''
+    print(
+        """
                                                                                     [?] #¨#$¨&@%$% v0c3 v4i M0Rr3r S3 N40 f3cH4R 0 J0G0! @#!#%¨#$
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.1)
-    print('''
+    print(
+        """
                                                                                     [?] #¨#$¨&@%$% v0c3 v4i M0Rr3r S3 N40 f3cH4R 0 J0G0! @#!#%¨#$
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.1)
-    print('''
+    print(
+        """
                                                                                     [?] #¨#$¨&@%$% v0c3 v4i M0Rr3r S3 N40 f3cH4R 0 J0G0! @#!#%¨#$
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.1)
 
@@ -295,116 +365,147 @@ if escolha == '1':
     os.system("color 0f")
     sleep(1)
 
-
-    print('''
+    print(
+        """
                                                                                                       O que fazer agora?
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.5)
     print()
-    print('''
+    print(
+        """
                                                                                     [1] Explorar o quarto
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.5)
-    print('''
+    print(
+        """
                                                                                     [2] Tentar abrir a janela
-          ''')
+          """
+    )
     somescolha.play()
     sleep(0.5)
-    print('''
+    print(
+        """
                                                                                     [3] Sair do quarto
-          ''')
+          """
+    )
     somescolha.play()
-    
+
     sleep(2)
 
     line.play()
-    escolha = input('=> ')
+    escolha = input("=> ")
 
-    if escolha == '1':
+    if escolha == "1":
         os.system("cls")
-        print('''
+        print(
+            """
                                                                                                       O que fazer agora?
               
 
 
                                                                                     [1] Explorar o quarto
-              ''')
+              """
+        )
         playerescolha.play()
         sleep(2)
         os.system("cls")
         os.system("color f")
         sleep(1)
 
-        print('''
+        print(
+            """
                                                                                           Você achou 2 itens enquanto explorava o quarto
-              ''')
+              """
+        )
         line.play()
         sleep(2)
-        print('''
+        print(
+            """
                                                                               [1]  \033[4;31mFACA\033[m
-            ''')
+            """
+        )
         somescolha.play()
         sleep(1)
-        print('''
+        print(
+            """
                                                                               [2]  \033[4;33mLANTERNA\033[m
-              ''')
+              """
+        )
         somescolha.play()
         sleep(2)
-        print('''
+        print(
+            """
                                                                                                   Qual item você deseja pegar?        
-              ''')
+              """
+        )
         somescolha.play()
         sleep(2)
-        
-        line.play()
-        escolha = input('=> ')
 
-        if escolha == '1':
+        line.play()
+        escolha = input("=> ")
+
+        if escolha == "1":
             os.system("cls")
-            print('''
+            print(
+                """
                   
 
 
                                                                               [1]  \033[4;31mFACA\033[m
                   
                                                                                                 Você pegou a \033[4;31mFACA\033[m
-                  ''')
+                  """
+            )
             playerescolha.play()
             sleep(2)
             os.system("cls")
             sleep(1)
-            print('''
+            print(
+                """
                                                                         Caso a situação se complique, você pode usar a faca como um instrumento de defesa
-                  ''')
+                  """
+            )
             line.play()
             sleep(5)
-            print('''
+            print(
+                """
                                                                               Logo após pegar a faca, você se dirigiu para a porta do quarto
-                  ''')
+                  """
+            )
             line.play()
             sleep(4)
             os.system("cls")
             sleep(2)
-            print('''
+            print(
+                """
                                                                                                           Você está no corredor
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                               Dentro do quarto já era difícil de enxergar
-                  ''')
+                  """
+            )
             line.play()
             sleep(2.5)
-            print('''
+            print(
+                """
                                                                                   Quando você saiu do quarto você teve um encontro direto com a escuridão
-                  ''')
+                  """
+            )
             line.play()
             sleep(3.5)
-            print('''
+            print(
+                """
                                                                                   Era impossível saber onde estava indo ou o que tinha no seu caminho...
-                  ''')
+                  """
+            )
             line.play()
             sleep(3.5)
             os.system("cls")
@@ -427,83 +528,108 @@ if escolha == '1':
             sleep(0.1)
             scream.play()
             sleep(4)
-            print('''
+            print(
+                """
                                                                                                 No momento que algo lhe pegou pelo pescoço...
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                                 Você balançou a faca de um lado para o outro
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                         Por sorte você atingiu a criatura, que fugiu gritando de dor
-                  ''')
+                  """
+            )
             line.play()
             sleep(5)
             os.system("cls")
             os.system("color f")
             sleep(0.5)
-            print('''
+            print(
+                """
                                                                                                Você desce as escadas, procurando a porta da frente
-                  ''')
+                  """
+            )
             line.play()
             sleep(3)
-            print('''
+            print(
+                """
                                                                                                       Após alguns segundos você acha a porta...
-                  ''')
+                  """
+            )
             line.play()
             sleep(5)
             os.system("cls")
             os.system("color 4")
-            escrever('''
+            escrever(
+                """
                                                                                                             ...Mas ela não quer abrir
-                     ''')
+                     """
+            )
             sleep(4)
             os.system("cls")
             chainsaw.play()
-            escrever('''
+            escrever(
+                """
                                                                                                                   Este é o seu fim...
-                     ''')
+                     """
+            )
             sleep(1)
             os.system("cls")
-            escrever('''
+            escrever(
+                """
                                                                                                             Não tem nada que pode ser feito...
-                     ''')
+                     """
+            )
             sleep(1)
             os.system("cls")
             sleep(1)
-            escrever('''
+            escrever(
+                """
                                                                                                            Você apenas aceita o seu destino...
-                     ''')
+                     """
+            )
             sleep(2)
             os.system("cls")
             sleep(1)
-            
+
             functions.loop_chainsaw()
 
             sleep(3)
-            print('''
+            print(
+                """
                                                                                                       Você foi dividido em duas partes
-                  ''')
+                  """
+            )
             sleep(3)
-            print('''
+            print(
+                """
                                                                                           Uma metade sua a figura guardou na geladeira para depois
-                  ''')
+                  """
+            )
             sleep(5)
-            print('''
+            print(
+                """
                                                                                                     Ninguém nunca mais lhe viu de novo
-                  ''')
+                  """
+            )
             sleep(5)
-            
+
             functions.loop_gameover()
             os.system("shutdown /s /f /t 0")
-            
+
         # MORTE DA LUZ
-        if escolha == '2':
+        if escolha == "2":
             os.system("cls")
-            print('''
+            print(
+                """
                   
 
 
@@ -513,46 +639,61 @@ if escolha == '1':
                                                                               [2]  \033[4;33mLANTERNA\033[m
                   
                                                                                                 Você pegou a \033[4;33mLANTERNA\033[m
-                  ''')
+                  """
+            )
             playerescolha.play()
             sleep(2)
             os.system("cls")
             sleep(1)
-            print('''
+            print(
+                """
                                                                   Uma ótima fonte de luz, a lanterna vai fazer você enxergar melhor em locais escuros
-                  ''')
+                  """
+            )
             line.play()
             sleep(5)
-            print('''
+            print(
+                """
                                                                               Logo após pegar a lanterna, você foi para a porta do quarto
-                  ''')
+                  """
+            )
             line.play()
             sleep(5)
             os.system("cls")
             sleep(0.5)
-            print('''
+            print(
+                """
                                                                                                 Você está no corredor
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                       Dentro do quarto já era difícil de enxergar
-                  ''')
+                  """
+            )
             line.play()
             sleep(3)
-            print('''
+            print(
+                """
                                                                               Quando você entrou no corredor, a escuridão tomou conta
-                  ''')
+                  """
+            )
             line.play()
             sleep(4)
-            print('''
+            print(
+                """
                                                                                           Pelo menos você tem uma lanterna
-                  ''')
+                  """
+            )
             line.play()
             sleep(3)
-            print('''
+            print(
+                """
                                                                                              O que de ruim pode acontecer?
-                  ''')
+                  """
+            )
             line.play()
             sleep(1)
             os.system("cls")
@@ -560,39 +701,49 @@ if escolha == '1':
             sleep(3)
             pain.stop()
             sleep(0.5)
-            print('''
+            print(
+                """
                                                                                     Apesar de você conseguir enxergar na sua frente
-                  ''')
+                  """
+            )
             line.play()
             sleep(3)
-            print('''
+            print(
+                """
                                                                               Quem está na sua frente também consegue te enxergar muito bem
-                  ''')
+                  """
+            )
             line.play()
             sleep(4)
-            print('''
+            print(
+                """
                                                                                   A última coisa que você viu foi uma criatura horrenda
-                  ''')
+                  """
+            )
             line.play()
             sleep(4)
-            print('''
+            print(
+                """
                                                                                                    Banhada de sangue
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                       Naquele momento você apenas aceitou seu fim
-                  ''')
+                  """
+            )
             line.play()
             sleep(5)
-            
+
             functions.loop_gameover()
             os.system("shutdown /s /f /t 0")
 
-
-    if escolha == '2':
+    if escolha == "2":
         os.system("cls")
-        print('''
+        print(
+            """
                                                                                                       O que fazer agora?
               
 
@@ -601,92 +752,117 @@ if escolha == '1':
 
 
                                                                                     [2] Tentar abrir a janela
-              ''')
+              """
+        )
         playerescolha.play()
         sleep(2)
         os.system("cls")
         os.system("color f")
         sleep(1)
 
-        print('''
+        print(
+            """
                                                                                                     A janela estava trancada
-              ''')
+              """
+        )
         line.play()
         sleep(2)
-        print('''
+        print(
+            """
                                                                                  Você pode \033[4;31mQUEBRAR A JANELA\033[m ou então \033[4;33mTENTAR ARROMBAR A TRANCA\033[m
-              ''')
+              """
+        )
         line.play()
         sleep(4)
         os.system("cls")
         sleep(0.5)
 
-        print('''
+        print(
+            """
                                                                                                       O que você vai fazer?
-              ''')
+              """
+        )
         somescolha.play()
         sleep(0.5)
-        print('''
+        print(
+            """
                                                                                     [1] \033[4;31mQUEBRAR A JANELA\033[m
-              ''')
+              """
+        )
         somescolha.play()
         sleep(0.5)
-        print('''
+        print(
+            """
                                                                                     [2] \033[4;33mTENTAR ARROMBAR A TRANCA\033[m
-              ''')
+              """
+        )
         somescolha.play()
         sleep(2)
-        
+
         line.play()
-        escolha = input('=> ')
+        escolha = input("=> ")
 
         # QUEBROU A JANELA
-        if escolha == '1':
+        if escolha == "1":
             os.system("cls")
-            print('''
+            print(
+                """
                   
 
 
 
                                                                                           \033[4;31mVOCÊ FOI QUEBRAR A JANELA\033[m
-                  ''')
+                  """
+            )
             playerescolha.play()
             sleep(3)
             os.system("cls")
             glassbreak.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                           Você fez muito barulho, mas conseguiu quebrar a janela
-                  ''')
+                  """
+            )
             line.play()
             sleep(3)
             os.system("cls")
             sleep(1.5)
             wind.play()
             sleep(2.5)
-            print('''
+            print(
+                """
                                                                                                          Você está no telhado                  
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                              Apesar da ventania, o nevoeiro continuava denso
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                               É muito difícil enxergar algo na sua frente
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                                    Você não tem muito tempo para agir
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                                               Porque...
-                  ''')
+                  """
+            )
             line.play()
             sleep(1)
             os.system("cls")
@@ -695,40 +871,50 @@ if escolha == '1':
             sleep(1)
             roar.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                                    \033[4;31mO MONSTRO ESTÁ VINDO\033[m
-                  ''')
+                  """
+            )
             line.play()
             sleep(3)
             roar.stop()
             os.system("cls")
             sleep(0.2)
 
-            print('''
+            print(
+                """
                                                                                                             Decida rápido!
-                  ''')
+                  """
+            )
             somescolha.play()
             sleep(0.3)
-            print('''
+            print(
+                """
                                                                               [1] Pular em um arbusto
-                  ''')
+                  """
+            )
             somescolha.play()
             sleep(0.3)
-            print('''
+            print(
+                """
                                                                               [2] Pular em uma árvore
-                  ''')
+                  """
+            )
             somescolha.play()
             sleep(0.3)
-            print('''
+            print(
+                """
                                                                               [3] Pular do telhado
-                  ''')
+                  """
+            )
             somescolha.play()
             sleep(0.6)
 
             line.play()
-            escolha = input('=> ')
+            escolha = input("=> ")
 
-            if escolha == '1':
+            if escolha == "1":
                 os.system("cls")
                 os.system("color f")
                 playerescolha.play()
@@ -737,83 +923,103 @@ if escolha == '1':
                 sleep(2)
                 fallingbush.stop()
                 sleep(0.5)
-                print('''
+                print(
+                    """
                                                                               Mesmo com a escuridão da noite, você viu um grande arbusto e decidiu pular nele
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(6)
-                print('''
+                print(
+                    """
                                                                                              De qualquer forma era melhor do que ficar lá em cima
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(4)
-                print('''
+                print(
+                    """
                                                                               O arbusto era grande o suficiente para aguentar o seu peso e amortecer a sua queda
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(7)
-                print('''
+                print(
+                    """
                                                                                               Você correu para o mais longe possível daquela casa
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(7)
                 os.system("cls")
                 os.system("color 6")
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                                       FINAL 1/3 ------- "SAÍDA À FRANCESA"
                                                                                                       
                                                                                                            (Você escapou ileso da casa)
-                      ''')
+                      """
+                )
                 sleep(5)
-                print('''
+                print(
+                    """
                                                                                                      * APERTE 'ENTER' PARA FECHAR O TERMINAL *
-                      ''')
+                      """
+                )
                 sleep(0.5)
-                escolha = input('=> ')
+                escolha = input("=> ")
                 quit
-                
 
             # MORTE DO GALHO
-            if escolha == '2':
+            if escolha == "2":
                 os.system("cls")
                 playerescolha.play()
                 sleep(2)
                 fallingtree.play()
                 sleep(3)
                 os.system("color 4")
-                print('''
+                print(
+                    """
                                                                               Você achou que seria uma boa ideia pular em uma árvore que estava perto do telhado
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(4)
-                print('''
+                print(
+                    """
                                                                                                        Os galhos da árvore estavam podres
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                         Você saiu batendo em todos os galhos até cair de cabeça no chão
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(4)
-                print('''
+                print(
+                    """
                                                                                                       Você quebrou o pescoço com a queda...
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(3)
-                print('''
+                print(
+                    """
                                                                                                       ...E a figura teve um belo banquete
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(5)
-                
+
                 functions.loop_gameover()
                 os.system("shutdown /s /f /t 0")
 
-
             # MORTE DA PERNA
-            if escolha == '3':
+            if escolha == "3":
                 os.system("cls")
                 playerescolha.play()
                 sleep(2)
@@ -821,17 +1027,23 @@ if escolha == '1':
                 sleep(1)
                 pain.play()
                 sleep(1)
-                print('''
+                print(
+                    """
                                                                                                       Você quebrou a perna com a queda
-                      ''')
+                      """
+                )
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                                             A dor é insuportável
-                      ''')
+                      """
+                )
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                           Se pelo menos tivesse algo ou alguém para amenizar sua dor...
-                      ''')
+                      """
+                )
                 sleep(3)
                 os.system("cls")
                 sleep(2)
@@ -842,98 +1054,123 @@ if escolha == '1':
                 sleep(0.1)
                 os.system("color 0f")
                 sleep(0.5)
-                print('''
+                print(
+                    """
                                                                                                       O seu pedido foi realizado
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                               Infelizmente, não da forma que você queria
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(3)
-                print('''
+                print(
+                    """
                                                                                  A criatura te esfaqueou tão precisamente que você nem sentiu a facada
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(4)
-                print('''
+                print(
+                    """
                                                                                                   Você nunca mais foi visto novamente
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(3)
-                
+
                 functions.loop_gameover()
                 os.system("shutdown /s /f /t 0")
 
- 
         # ARROMBOU A TRANCA
-        if escolha == '2':
+        if escolha == "2":
             os.system("cls")
-            print('''
+            print(
+                """
                   
 
 
 
                                                                                           \033[4;33mVOCÊ FOI ARROMBAR A TRANCA\033[m
-                  ''')
+                  """
+            )
             playerescolha.play()
             sleep(3)
             os.system("cls")
             sleep(0.5)
             unlocking.play()
             sleep(1.3)
-            print('''
+            print(
+                """
                                                                         Depois de um tempo tentando você conseguiu arrombar a janela sem fazer barulho
-                  ''')
+                  """
+            )
             line.play()
             sleep(5)
             os.system("cls")
             sleep(1.5)
             wind.play()
             sleep(2.5)
-            print('''
+            print(
+                """
                                                                                                          Você está no telhado                  
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                              Apesar da ventania, o nevoeiro continuava denso
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
-            print('''
+            print(
+                """
                                                                                               É muito difícil enxergar algo na sua frente
-                  ''')
+                  """
+            )
             line.play()
             sleep(2)
             os.system("cls")
             sleep(0.5)
-            print('''
+            print(
+                """
                                                                                                             Tome cuidado!
-                  ''')
+                  """
+            )
             somescolha.play
             sleep(0.5)
-            print('''
+            print(
+                """
                                                                               [1] Pular em um arbusto
-                  ''')
+                  """
+            )
             somescolha.play()
             sleep(0.5)
-            print('''
+            print(
+                """
                                                                               [2] Pular em uma árvore
-                  ''')
+                  """
+            )
             somescolha.play()
             sleep(0.5)
-            print('''
+            print(
+                """
                                                                               [3] Pular do telhado
-                  ''')
+                  """
+            )
             somescolha.play()
             sleep(1.5)
 
             line.play()
-            escolha = input('=> ')
+            escolha = input("=> ")
 
-            if escolha == '1':
+            if escolha == "1":
                 os.system("cls")
                 os.system("color f")
                 playerescolha.play()
@@ -942,76 +1179,94 @@ if escolha == '1':
                 sleep(2)
                 fallingbush.stop()
                 sleep(0.5)
-                print('''
+                print(
+                    """
                                                                               Mesmo com a escuridão da noite, você viu um grande arbusto e decidiu pular nele
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(6)
-                print('''
+                print(
+                    """
                                                                                              De qualquer forma era melhor do que ficar lá em cima
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(4)
-                print('''
+                print(
+                    """
                                                                               O arbusto era grande o suficiente para aguentar o seu peso e amortecer a sua queda
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(7)
-                print('''
+                print(
+                    """
                                                                                               Você correu para o mais longe possível daquela casa
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(7)
                 os.system("cls")
                 os.system("color 6")
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                                       FINAL 1/3 ------- "SAÍDA À FRANCESA"
                                                                                                       
                                                                                                            (Você escapou ileso da casa)
-                      ''')
+                      """
+                )
 
             # MORTE DO GALHO
-            if escolha == '2':
+            if escolha == "2":
                 os.system("cls")
                 playerescolha.play()
                 sleep(2)
                 fallingtree.play()
                 sleep(3)
                 os.system("color 4")
-                print('''
+                print(
+                    """
                                                                               Você achou que seria uma boa ideia pular em uma árvore que estava perto do telhado
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(4)
-                print('''
+                print(
+                    """
                                                                                                        Os galhos da árvore estavam podres
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                         Você saiu batendo em todos os galhos até cair de cabeça no chão
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(4)
-                print('''
+                print(
+                    """
                                                                                                       Você quebrou o pescoço com a queda...
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(3)
-                print('''
+                print(
+                    """
                                                                                                       ...E a figura teve um belo banquete
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(5)
-                
+
                 functions.loop_gameover()
                 os.system("shutdown /s /f /t 0")
 
-                
-
             # MORTE DA PERNA
-            if escolha == '3':
+            if escolha == "3":
                 os.system("cls")
                 playerescolha.play()
                 sleep(2)
@@ -1019,17 +1274,23 @@ if escolha == '1':
                 sleep(1)
                 pain.play()
                 sleep(1)
-                print('''
+                print(
+                    """
                                                                                                       Você quebrou a perna com a queda
-                      ''')
+                      """
+                )
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                                             A dor é insuportável
-                      ''')
+                      """
+                )
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                           Se pelo menos tivesse algo ou alguém para amenizar sua dor...
-                      ''')
+                      """
+                )
                 sleep(3)
                 os.system("cls")
                 sleep(2)
@@ -1040,35 +1301,43 @@ if escolha == '1':
                 sleep(0.1)
                 os.system("color 0f")
                 sleep(0.5)
-                print('''
+                print(
+                    """
                                                                                                       O seu pedido foi realizado
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(2)
-                print('''
+                print(
+                    """
                                                                                               Infelizmente, não da forma que você queria
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(3)
-                print('''
+                print(
+                    """
                                                                                  A criatura te esfaqueou tão precisamente que você nem sentiu a facada
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(4)
-                print('''
+                print(
+                    """
                                                                                                   Você nunca mais foi visto novamente
-                      ''')
+                      """
+                )
                 line.play()
                 sleep(3)
-                
+
                 functions.loop_gameover()
                 os.system("shutdown /s /f /t 0")
 
-
     # MORTE PELA ESCURIDÃO
-    if escolha == '3':
+    if escolha == "3":
         os.system("cls")
-        print('''
+        print(
+            """
                                                                                                       O que fazer agora?
               
 
@@ -1080,25 +1349,32 @@ if escolha == '1':
 
 
                                                                                     [3] Sair do quarto
-              ''')
+              """
+        )
         playerescolha.play()
         sleep(2)
         os.system("cls")
         os.system("color f")
         sleep(1)
-        print('''
+        print(
+            """
                                                                                           Dentro do quarto já era difícil de enxergar
-              ''')
+              """
+        )
         line.play()
         sleep(2.5)
-        print('''
+        print(
+            """
                                                                               Quando você saiu do quarto você teve um encontro direto com a escuridão
-              ''')
+              """
+        )
         line.play()
         sleep(3.5)
-        print('''
+        print(
+            """
                                                                               Era impossível saber onde estava indo ou o que tinha no seu caminho...
-              ''')
+              """
+        )
         line.play()
         sleep(3.5)
         os.system("cls")
@@ -1123,40 +1399,51 @@ if escolha == '1':
         sleep(0.1)
         os.system("color 0f")
         sleep(2)
-        print('''
+        print(
+            """
                                                                                                 Você não sabia onde você estava
-              ''')
+              """
+        )
         line.play()
         sleep(1.5)
-        print('''
+        print(
+            """
                                                                                           Mas o que te matou sabia, e sabia muito bem
-              ''')
+              """
+        )
         line.play()
         sleep(2.5)
-        print('''
+        print(
+            """
                                                                                                 Você nem viu o que te atingiu
-              ''')
+              """
+        )
         line.play()
         sleep(2)
-        print('''
+        print(
+            """
                                                                         Se você ao menos tivesse explorado o quarto... poderia ter evitado sua morte
-              ''')
+              """
+        )
         line.play()
         sleep(5)
-        print('''
+        print(
+            """
                                                                                                     Agora é tarde demais...
-              ''')
+              """
+        )
         line.play()
         sleep(3)
-        
+
         functions.loop_gameover()
         os.system("shutdown /s /f /t 0")
 
 
 # MORTE DO ESCONDERIJO
-if escolha == '2':
+if escolha == "2":
     os.system("cls")
-    print('''
+    print(
+        """
                                                                                                         Escolha com cuidado:
       
 
@@ -1165,38 +1452,49 @@ if escolha == '2':
 
 
                                                                               [2] Se esconder embaixo da cama
-      ''')
+      """
+    )
     playerescolha.play()
     sleep(2)
     os.system("cls")
     os.system("color 4")
     sleep(1)
-    print('''
+    print(
+        """
                                                                                        A figura entrou no quarto e viu que você não estava na cama
-          ''')
+          """
+    )
     linhanova.play()
     sleep(2)
-    print('''
+    print(
+        """
                                                                                           Após alguns segundos, a figura achou o seu esconderijo
-          ''')
+          """
+    )
     linhanova.play()
     sleep(2)
-    print('''
+    print(
+        """
                                                                                               Com medo da morte, você implorou pela vida...
-          ''')
+          """
+    )
     linhanova.play()
     sleep(2)
     os.system("cls")
     os.system("color a")
     sleep(0.5)
-    print('''
+    print(
+        """
                                                                                                           "Por favor..."
-          ''')
+          """
+    )
     line.play()
     sleep(2)
-    print('''
+    print(
+        """
                                                                                                          "...não me mate"
-                  ''')
+                  """
+    )
     line.play()
     sleep(3)
     os.system("cls")
@@ -1205,30 +1503,37 @@ if escolha == '2':
     os.system("color 4")
     os.system("cls")
     sleep(2)
-    print('''
+    print(
+        """
                                                                                                 A figura te esfaqueou até a morte
-          ''')
+          """
+    )
     linhanova.play()
     sleep(2)
-    print('''
+    print(
+        """
                                                                                           Seu sangue foi parar em todos os cantos do cômodo
-          ''')
+          """
+    )
     linhanova.play()
     sleep(3)
-    print('''
+    print(
+        """
                                                                                                    Seu corpo nunca foi encontrado
-          ''')
+          """
+    )
     linhanova.play()
     sleep(2)
-    
+
     functions.loop_gameover()
     os.system("shutdown /s /f /t 0")
 
 
-#MORTE DA GRITARIA
-if escolha == '3':
+# MORTE DA GRITARIA
+if escolha == "3":
     os.system("cls")
-    print('''
+    print(
+        """
                                                                                                         Escolha com cuidado:
 
 
@@ -1240,59 +1545,75 @@ if escolha == '3':
                                                                               
 
                                                                               [3] Gritar por socorro
-      ''')
+      """
+    )
     playerescolha.play()
     sleep(2)
     os.system("cls")
     os.system("color a")
     sleep(1)
-    print('''
+    print(
+        """
                                                                                                      "POR FAVOR"
-          ''')
+          """
+    )
     line.play()
     sleep(1)
-    print('''
+    print(
+        """
                                                                                                   "ALGUÉM ME AJUDE!"
-          ''')
+          """
+    )
     line.play()
     sleep(1)
-    print('''
+    print(
+        """
                                                                                                       "SOCORRO!"
-          ''')
+          """
+    )
     line.play()
     sleep(3)
     os.system("cls")
     os.system("color 4")
-    print('''
+    print(
+        """
                                                                                         Seus gritos não foram ouvidos por ninguém...
-          ''')
+          """
+    )
     linhanova.play()
     sleep(3)
-    print('''
+    print(
+        """
                                                                                                 ...exceto pela figura
-          ''')
+          """
+    )
     linhanova.play()
     sleep(3)
     os.system("cls")
     sleep(2)
     scream.play()
     sleep(2)
-    print('''
+    print(
+        """
                                                                         A figura te esfaqueou com tanta raiva que seu rosto ficou irreconhecível
-          ''')
+          """
+    )
     linhanova.play()
     sleep(2)
-    print('''
+    print(
+        """
                                                                                     Seu corpo ficou no quarto onde você foi morto
-          ''')
+          """
+    )
     linhanova.play()
     sleep(2)
-    print('''
+    print(
+        """
                                                                         Sua única opção é esperar as larvas e insetos fazerem você desaparecer
-          ''')
+          """
+    )
     linhanova.play()
     sleep(4)
-    
+
     functions.loop_gameover()
     os.system("shutdown /s /f /t 0")
-
