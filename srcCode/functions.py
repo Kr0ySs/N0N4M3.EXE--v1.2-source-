@@ -30,6 +30,13 @@ def escreverlento(texto):
 
 # GAMEOVERS
 
+def loop_chainsaw():
+     for i in range(300):
+          os.system("color 4f")
+          sleep(0.03)
+          os.system("color 0f")
+          sleep(0.03)
+
 def loop_gameover():
       frames = [
             '''
@@ -42,6 +49,7 @@ I                                               I
       ]
       while True:
           for quadro in frames:
+              os.system("color 4")
               os.system("cls")
               print("\n" * 5)
               print(quadro)
@@ -53,7 +61,7 @@ I                                               I
 def loop_inicial_1s():
       frames = [
         '''
-                                                                            FeChE eStE jOgO aGoRa!
+                                                                                                FeChE eStE jOgO aGoRa!
         '''
       ]
       for i in range(4):
@@ -66,7 +74,7 @@ def loop_inicial_1s():
 def loop_inicial_500ms():
       frames = [
           '''
-                                                                            FeChE eStE jOgO aGoRa!
+                                                                                                FeChE eStE jOgO aGoRa!
           '''
       ]
       for i in range(4):
@@ -79,7 +87,7 @@ def loop_inicial_500ms():
 def loop_inicial_50ms():
       frames = [
           '''
-                                                                            FeChE eStE jOgO aGoRa!
+                                                                                                FeChE eStE jOgO aGoRa!
           '''
       ]
       for i in range(12):
@@ -94,11 +102,11 @@ def loop_inicial_50ms():
 def titulo_menu():
       frames = [
             '''
-                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
-                                                            I                                               I
-                                                            I              N 0 N 4 M 3 . E X E              I 
-                                                            I                                               I 
-                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
+                                                                                     /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
+                                                                                     I                                               I
+                                                                                     I              N 0 N 4 M 3 . E X E              I 
+                                                                                     I                                               I 
+                                                                                     /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
             '''
       ]
       for quadro in frames:
