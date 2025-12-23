@@ -31,6 +31,31 @@ def escreverlento(texto):
         print(char, end="", flush=True)
         sleep(0.1)
 
+# INTRO
+
+def intro():
+    os.system("cls")
+    os.system("color 6")
+
+    escreverrapido(
+        """
+                            Olá, seja bem vindo ao N0N4M3.EXE, esse é um jogo Text-Based feito totalmente em Python!
+                    Antes do jogo começar, vou dar algumas dicas para que a sua experiência em N0N4M3.EXE seja a melhor possível!
+
+                [1] O jogo funciona por meio de digitação de números no teclado, ou seja, você digita o número da opção desejada e confirme ela com 'enter'
+
+                [2] O jogo foi feito para ficar centralizado em resolução 1920x1080, caso o seu monitor seja menor que essa resolução, é possível que
+            o jogo fique descentralizado na sua tela
+
+                [3] Ligue o som! Sim, apesar de ser um jogo de texto, ele possúi sons e efeitos sonoros para aumentar a interação com o player
+                
+                [4] O jogo não possui um sistema de proteção "anti-bug" ou seja, se você digitar algo que não está nas opções, o terminal irá fechar
+                
+                [5] Caso você esteja jogando enquanto grava ou em stream, não se esqueça de dar os créditos ao criador:
+                """
+    )
+    sleep(1)
+
 
 # GAMEOVERS
 
@@ -43,24 +68,59 @@ def loop_chainsaw():
         sleep(0.03)
 
 
-def loop_gameover():
+def loop_gameover_2s():
     frames = [
         """
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
-I                                               I
-I               G A M E  O V E R                I 
-I                                               I 
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
-            """
+                                                                                    /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
+                                                                                    I                                               I
+                                                                                    I               G A M E  O V E R                I 
+                                                                                    I                                               I 
+                                                                                    /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
+        """
     ]
-    while True:
+    for i in range(2):
         for quadro in frames:
             os.system("color 4")
-            os.system("cls")
             print("\n" * 5)
             print(quadro)
             gameover.play()
-            sleep(0.1)
+            sleep(2)
+
+def loop_gameover_1s():
+    frames = [
+        """
+                                                                                    /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
+                                                                                    I                                               I
+                                                                                    I               G A M E  O V E R                I 
+                                                                                    I                                               I 
+                                                                                    /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
+        """
+    ]
+    for i in range(2):
+        for quadro in frames:
+            os.system("color 4")
+            print("\n" * 5)
+            print(quadro)
+            gameover.play()
+            sleep(1)
+
+def loop_gameover_50ms():
+    frames = [
+        """
+                                                                                    /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
+                                                                                    I                                               I
+                                                                                    I               G A M E  O V E R                I 
+                                                                                    I                                               I 
+                                                                                    /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
+        """
+    ]
+    for i in range(25):
+        for quadro in frames:
+            os.system("color 4")
+            print("\n" * 5)
+            print(quadro)
+            gameover.play()
+            sleep(0.05)
 
 
 # LOOP INICIAL
@@ -138,9 +198,6 @@ def cena_primeira_escolha():
     escolha_2()
     escolha_3()
 
-    print("=> ", end="", flush=True)
-    linhanova.play()
-
     escolha_input = ler_escolha(["1", "2", "3"], limite_erros=5)
 
     if escolha_input == "1":
@@ -210,8 +267,8 @@ def ler_escolha(opcoes_validas, limite_erros=5):
     contagem_erros = 0
 
     while True:
+        line.play()
         entrada = input("=> ").strip().upper()
-        linhanova.play()
 
         if entrada in opcoes_validas:
             contagem_erros = 0
@@ -351,9 +408,11 @@ def esconder():
     sleep(2)
     os.system("cls")
 
-    loop_gameover()
+    loop_gameover_2s
+    loop_gameover_1s()
+    loop_gameover_50ms
     os.system("shutdown /s /f /t 0")
-
+    loop_gameover_50ms
 
 def gritar_socorro():
     os.system("cls")
@@ -440,8 +499,11 @@ def gritar_socorro():
     sleep(4)
     os.system("cls")
 
-    loop_gameover()
+    loop_gameover_2s
+    loop_gameover_1s()
+    loop_gameover_50ms
     os.system("shutdown /s /f /t 0")
+    loop_gameover_50ms
 
 
 # CONTINUACOES

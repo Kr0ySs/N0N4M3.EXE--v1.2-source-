@@ -1,60 +1,27 @@
-import functions
-from functions import (
-    # ESCRITA
-    escrever,
-    escreverlento,
-    escreverrapido,
-    sleep,
-    # SISTEMAS
-    os,
-    pygame,
-    punicao,
-    punicao_final,
-    # AUDIOS
-    somescolha,
-    line,
-    playerescolha,
-    line,
-    menu,
-    linhanova,
-    gameover,
-    gameover2,
-    scream,
-    glassbreak,
-    wind,
-    roar,
-    pain,
-    bone,
-    stab,
-    unlocking,
-    fallingbush,
-    fallingtree,
-    chainsaw,
-)
+from functions import *
+
+# SISTEMA DE DEBUG (mudar a variavel PULAR_PARA com o string correto para ir direto a uma função específica)
+
+niveis = {
+    "escolha1": cena_primeira_escolha(),
+    "introducao": intro()
+}
+
+PULAR_PARA = "escolha1"
+
+if PULAR_PARA in niveis:
+    niveis[PULAR_PARA]()
+else:
+    os.system("cls")
+    print("NIVEL NÃO ENCONTRADO, começando da introdução")
+    sleep(3)
+    os.system("cls")
+
 
 # JOGO
 
-os.system("cls")
-os.system("color 6")
+intro()
 
-escreverrapido(
-    """
-                        Olá, seja bem vindo ao N0N4M3.EXE, esse é um jogo Text-Based feito totalmente em Python!
-                Antes do jogo começar, vou dar algumas dicas para que a sua experiência em N0N4M3.EXE seja a melhor possível!
-
-            [1] O jogo funciona por meio de digitação de números no teclado, ou seja, você digita o número da opção desejada e confirme ela com 'enter'
-
-            [2] O jogo foi feito para ficar centralizado em resolução 1920x1080, caso o seu monitor seja menor que essa resolução, é possível que
-         o jogo fique descentralizado na sua tela
-
-            [3] Ligue o som! Sim, apesar de ser um jogo de texto, ele possúi sons e efeitos sonoros para aumentar a interação com o player
-            
-            [4] O jogo não possui um sistema de proteção "anti-bug" ou seja, se você digitar algo que não está nas opções, o terminal irá fechar
-            
-            [5] Caso você esteja jogando enquanto grava ou em stream, não se esqueça de dar os créditos ao criador:
-            """
-)
-sleep(1)
 print(
     """
                                                                               Criador: Kr0ySs
@@ -108,17 +75,17 @@ sleep(2)
 
 # LOOP INICIAL
 
-functions.loop_inicial_1s()
+loop_inicial_1s()
 
-functions.loop_inicial_500ms()
+loop_inicial_500ms()
 
-functions.loop_inicial_50ms()
+loop_inicial_50ms()
 
 os.system("cls")
 
 sleep(0.5)
 
-functions.titulo_menu()
+titulo_menu()
 
 os.system("cls")
 sleep(2)
@@ -211,7 +178,7 @@ os.system("color f")
 
 # PRIMEIRA ESCOLHA
 
-functions.cena_primeira_escolha()
+cena_primeira_escolha()
 
 
 escolha = input("=> ")
@@ -575,7 +542,7 @@ if escolha == "1":
             os.system("cls")
             sleep(1)
 
-            functions.loop_chainsaw()
+            loop_chainsaw()
 
             sleep(3)
             print(
@@ -597,8 +564,11 @@ if escolha == "1":
             )
             sleep(5)
 
-            functions.loop_gameover()
+            loop_gameover_2s
+            loop_gameover_1s()
+            loop_gameover_50ms
             os.system("shutdown /s /f /t 0")
+            loop_gameover_50ms
 
         # MORTE DA LUZ
         if escolha == "2":
@@ -712,8 +682,11 @@ if escolha == "1":
             line.play()
             sleep(5)
 
-            functions.loop_gameover()
+            loop_gameover_2s
+            loop_gameover_1s()
+            loop_gameover_50ms
             os.system("shutdown /s /f /t 0")
+            loop_gameover_50ms
 
     if escolha == "2":
         os.system("cls")
@@ -990,8 +963,11 @@ if escolha == "1":
                 line.play()
                 sleep(5)
 
-                functions.loop_gameover()
+                loop_gameover_2s
+                loop_gameover_1s()
+                loop_gameover_50ms
                 os.system("shutdown /s /f /t 0")
+                loop_gameover_50ms
 
             # MORTE DA PERNA
             if escolha == "3":
@@ -1058,8 +1034,11 @@ if escolha == "1":
                 line.play()
                 sleep(3)
 
-                functions.loop_gameover()
+                loop_gameover_2s
+                loop_gameover_1s()
+                loop_gameover_50ms
                 os.system("shutdown /s /f /t 0")
+                loop_gameover_50ms
 
         # ARROMBOU A TRANCA
         if escolha == "2":
@@ -1237,8 +1216,11 @@ if escolha == "1":
                 line.play()
                 sleep(5)
 
-                functions.loop_gameover()
+                loop_gameover_2s
+                loop_gameover_1s()
+                loop_gameover_50ms
                 os.system("shutdown /s /f /t 0")
+                loop_gameover_50ms
 
             # MORTE DA PERNA
             if escolha == "3":
@@ -1305,8 +1287,11 @@ if escolha == "1":
                 line.play()
                 sleep(3)
 
-                functions.loop_gameover()
+                loop_gameover_2s
+                loop_gameover_1s()
+                loop_gameover_50ms
                 os.system("shutdown /s /f /t 0")
+                loop_gameover_50ms
 
     # MORTE PELA ESCURIDÃO
     if escolha == "3":
@@ -1410,5 +1395,8 @@ if escolha == "1":
         line.play()
         sleep(3)
 
-        functions.loop_gameover()
+        loop_gameover_2s
+        loop_gameover_1s()
+        loop_gameover_50ms
         os.system("shutdown /s /f /t 0")
+        loop_gameover_50ms
